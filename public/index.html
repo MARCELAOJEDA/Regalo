@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">  <!-- es: lenguaje español -->
+
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/1pestana.jpg">
+    <link rel="stylesheet" type="text/css" href="css/estilo1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="description" content="descubre que quieren tus amigos les regales">
+    <meta name="keywords" content="que le regalo a, regalo, sorpresa, presente" ><meta>
+    <title>Regalo</title>
+</head>
+
+<body>
+<h1>Bienvenidos</h1>
+
+<div class="buscador">
+    <input type="text"class="buscar" placeholder="A quien le vas a regalar..?">
+        <a href="" class="boton"> </a>
+</div>
+<a class="link" href="login.html">
+<img src="./imagenes/qr.png" alt="Direccion pagina web/login">
+</a>
+
+
+<footer>
+    * O,Me!
+</footer>
+
+<!-- Aqui se esta trabajando en conectar con la BD de firebase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js";
+
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+    apiKey: "AIzaSyD8wXMchMPSZ5PRy0UrzN6gTKSB4IZ0RsI",
+    authDomain: "regalo-ome.firebaseapp.com",
+    projectId: "regalo-ome",
+    storageBucket: "regalo-ome.appspot.com",
+    messagingSenderId: "710336602435",
+    appId: "1:710336602435:web:337413ee2aca0387e84ff6",
+    measurementId: "G-31NNKRKFLK"
+    };
+
+  // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+
+<script src="./app.js"></script>
+</body>
+
+</html>

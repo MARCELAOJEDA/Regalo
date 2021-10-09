@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box; 
+    margin: 0px;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../imagenes/regadera.jpg"); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-color: #FAEBD7;
+}
+.formulario{ 
+    background: #fff; 
+    margin-top: 150px;
+    padding: 3px;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 50px;
+        border-radius: 2%;
+        background-color: chartreuse;
+    }
+}
+h1{
+    text-align: center;/*texto centralizado*/
+    color: #0e62eb;/*color del texto*/
+    font-size: 40px;/*tamaño del texto*/
+    }
+.contenedor{ /**/
+    width: 100%;/**/
+    padding: 15px;
+    background-color: aquamarine;
+}
+input[type="text"],input[type="password"] {
+    font-size: 20px;/*tamaño letra de las cajas*/
+    width: 82%; /*caja correo y password*/ 
+    padding: 10px;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 5Px solid;
+    border-color: blueviolet rgb(193, 240, 22) blue rgb(238, 11, 143); 
+    width: 100%;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: rgb(73, 18, 202); /*color del icono*/
+    
+}
+.button{
+    width: 100%;
+    color: rgb(66, 28, 204);/*color de letra del boton*/
+    font-size: 20px;/*tamaño de letra en el boton*/
+    background:  #f716b3;/*color del boton*/
+    padding: 15px 20px;
+    border-radius: 15px ;/*borde del boton redondeado*/
+    cursor: pointer;
+}
+.button:hover{/*cambio de color del boton a*/
+    background: rgb(189, 230, 6);
+}
+p{
+    text-align: center;
+}
+.link{
+     color: #df1c9b;/* registrate */
+    font-weight: 600;
+    text-decoration: underline rgb(12, 219, 46); /* subrayado d registrate*/
+}
+.link:hover{ /* registrate pasa azul*/
+    color: rgb(63, 17, 189); 
+}
+footer{
+    font-family: "singleGhost";
+    font-size: 30px; /*tamaño de letra*/
+    letter-spacing: 10px; /*separa letras */
+    /*word-spacing: 90px;separa las palabras*/
+    margin-top:400px;
+    text-align:right;/*alineado a la derecha*/
+    text-transform: capitalize;/*empieza con mayuscula*/
+    text-shadow: 5px 3px rgb(10, 13, 226);/*5 a la derecha y 3 para abajo hace sombra*/
+    color: rgb(5, 3, 22);
+}
+footer:hover{
+    animation: bounceOutRight; /*da movimiento*/
+    animation-duration: 5s; /*designa el tiempo*/
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+    background-color: aquamarine; /*x si falla la imagen*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; /*familia de letras*/
+    background-image: url("../imagenes/2imagen.jpg"); /*imagen d fondo */
+    background-repeat: no-repeat; /*no repit la imagen */
+    background-size: cover; /* se adapta a la pantalla*/
+    background-position: center;
+    background-attachment:fixed;/*la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor.*/
+    display: flex;
+    }
+/* opasidad a la imagen */
+body:before {
+    content:"";
+    width: 100%;
+    min-height :100vh;
+    position: absolute;
+    background: linear-gradient(80deg,rgb(111, 230, 95),rgb(238, 34, 187));/*colores del velo*/
+    opacity: 0.5;
+    top: 0;
+    left: 10;
+    z-index: -1;/* para q se pueda ver el texto sobre la opasidad 
+    */
+    
+}
+/*https://fonts.google.com/specimen/Pinyon+Script?preview.text=Bienvenido&preview.text_type=custom#pairings*/
+@font-face {
+    font-family:"singleGhost" ;
+    src: url("../font/castillo.ttf");
+    font-style: oblique; /*estilo de letra oblicua*/
+    font-size: blue;
+}
+h1 { 
+    font-size: medium; 
+    color: transparent;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+.buscador{ /*hoja*/
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    background: rgb(11, 139, 79);
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    height: 40px;/*tamaño*/
+    border-radius: 10px 150px / 120px; /*da forma de hoja*/
+}
+.buscar{/*caja*/
+background: rgb(38, 107, 5);
+font-size: 15px;
+float: left;
+line-height: 10px;
+transition: .3s;
+width: 0;
+}
+.boton{
+    width: 40px;
+    height: 40px;
+    color: rgb(38, 161, 7);
+    font-size: 30px;
+}
+@media screen and (min-width:768px) {
+    .buscador:hover> .buscar{
+    width: 300px;}
+}
+@media screen and (min-width:480px) {
+    .buscador:hover> .buscar{
+    width: 190px;}
+}
+@media screen and (min-width:1024px) {
+        .buscador:hover> .buscar{
+        width: 500px; }
+}  
+img{
+    width: 100px;
+    height: 100px;
+    padding: 0px; 
+    margin: 0px; 
+    border: 2px solid rgb(6, 107, 65); 
+    /* float: left;  */
+    /* top: 50%; */
+
+    }
+ footer{ 
+    font-family: "singleGhost";
+    font-size: 30px; /*tamaño de letra*/
+    /*letter-spacing: 10px; separa letras */
+    /*word-spacing: 90px;separa las palabras*/
+    margin-top:900px; 
+    text-align:end; /*alineado a la derecha */
+    /* text-transform: capitalize;empieza con mayuscula */
+    /* text-shadow: 5px 3px rgb(10, 13, 226);5 a la derecha y 3 para abajo hace sombra */
+    /* color: rgb(5, 3, 22); 
+
+/* footer:hover{ */
+    /* animation: bounceOutRight; da movimiento */
+    /* animation-duration: 5s; designa el tiempo
+} */

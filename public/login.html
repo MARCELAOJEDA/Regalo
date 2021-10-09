@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="css/estilo2.css">
+    <link rel="icon" href="imagenes/1pestana.jpg">
+</head>  
+
+<body>
+    <form class="formulario">
+    <h1>Login</h1>
+    <P>&#128512; &#128516; &#128525; &#128151;</P>
+
+    <div class="contenedor">
+        <div class="input-contenedor">
+    <i class="fas fa-envelope icon"></i>
+        <input type="text" placeholder="Correo Electronico">
+    </div>
+
+    <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+        <input type="password" placeholder="Contraseña">
+    </div>
+
+        <input type="submit" value="Enviar" class="button">
+    <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+        <p>¿No tienes una cuenta? <a class="link" href="registrar.html">Registrate! </a>
+        </p>
+    </div>
+    </form>
+
+<footer>
+    * O, Me!
+</footer>
+    
+    <!-- Aqui se esta trabajando en conectar con la BD de firebase -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+    
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js";
+    
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+            apiKey: "AIzaSyD8wXMchMPSZ5PRy0UrzN6gTKSB4IZ0RsI",
+            authDomain: "regalo-ome.firebaseapp.com",
+            projectId: "regalo-ome",
+            storageBucket: "regalo-ome.appspot.com",
+            messagingSenderId: "710336602435",
+            appId: "1:710336602435:web:337413ee2aca0387e84ff6",
+            measurementId: "G-31NNKRKFLK"
+            };
+          // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>
